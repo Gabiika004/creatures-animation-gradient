@@ -82,3 +82,34 @@ body {
   opacity: 1;
   animation: spin 1.5s linear infinite;
 }
+
+/* ------------------------------
+   Card image swap on hover
+--------------------------------*/
+.card img:nth-child(1) {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  width: 96%;
+  height: 96%;
+  border-radius: 6px;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.card:hover img:nth-child(1) {
+  opacity: 0;
+}
+.card img:nth-child(2) {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  width: 96%;
+  height: 96%;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.card:hover img:nth-child(2) {
+  opacity: 1;
+}
