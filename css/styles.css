@@ -113,3 +113,31 @@ body {
 .card:hover img:nth-child(2) {
   opacity: 1;
 }
+
+/* ------------------------------
+   Title content inside card
+--------------------------------*/
+.card .content {
+  position: absolute;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-family: "MedievalSharp", cursive;
+  color: var(--white);
+  line-height: 0.9em;
+  top: 70%;
+  left: -10px;
+  rotate: -10deg;
+  text-shadow: 0 0px 10px var(--danger);
+  opacity: 0.5s;
+}
+.card:hover .content {
+  color: var(--yellow);
+  text-shadow: 0 0px 10px var(--purple);
+}
+
+/* ------------------------------
+   Transparent background hover state
+--------------------------------*/
+.card1:hover,
+.card:hover {
+  background-color: transparent;
+}
