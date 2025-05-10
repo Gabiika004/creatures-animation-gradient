@@ -37,3 +37,17 @@ body {
   justify-content: center;
   margin: 0;
 }
+
+/* ------------------------------
+   Card base style
+--------------------------------*/
+.card {
+  position: relative;
+  background: var(--dark);
+  width: 300px;
+  aspect-ratio: 3 / 4.5;
+  padding: 3px;
+  border-radius: 5px;
+  margin: 2rem;
+  transition: 0.5s;
+}
