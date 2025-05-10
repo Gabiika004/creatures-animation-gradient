@@ -1,0 +1,39 @@
+/* ------------------------------
+   Font import
+--------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+
+/* ------------------------------
+   Color variables
+--------------------------------*/
+:root {
+  --black: #0a0e1f;
+  --dark: #1d2233;
+  --green: #aac705;
+  --white: #e3f7d4;
+  --purple: #aac705;
+  --danger: #ff5570;
+  --yellow: #f6e97b;
+}
+
+/* ------------------------------
+   Custom CSS property for animation
+--------------------------------*/
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* ------------------------------
+   Global styles and layout
+--------------------------------*/
+body {
+  min-height: 100vh;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
