@@ -51,3 +51,34 @@ body {
   margin: 2rem;
   transition: 0.5s;
 }
+
+/* ------------------------------
+   Card border glowing animation (before/after)
+--------------------------------*/
+.card::before,
+.card::after {
+  position: absolute;
+  width: 104%;
+  height: 102%;
+  top: -1%;
+  left: -2%;
+  content: "";
+  border-radius: 6px;
+  background-image: linear-gradient(
+    var(--rotate),
+    var(--purple),
+    var(--danger)
+  );
+  z-index: -1;
+  transition: opacity 0.5s;
+  animation: none;
+  opacity: 0;
+}
+.card::after {
+  filter: blur(40px);
+}
+.card:hover::before,
+.card:hover::after {
+  opacity: 1;
+  animation: spin 1.5s linear infinite;
+}
